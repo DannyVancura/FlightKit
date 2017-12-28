@@ -1,15 +1,15 @@
 //
-//  FlightKitTests.swift
-//  FlightKitTests
+//  FlightKit__macOS_Tests.swift
+//  FlightKit (macOS)Tests
 //
 //  Created by Daniel Vancura on 12/27/17.
 //  Copyright © 2017 Daniel Vancura. All rights reserved.
 //
 
 import XCTest
-@testable import FlightKit
+@testable import FlightKit__macOS_
 
-class FlightKitTests: XCTestCase {
+class FlightKit__macOS_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,20 +21,9 @@ class FlightKitTests: XCTestCase {
         super.tearDown()
     }
     
-    func testRunning() {
-        let connections = [
-            FKTConnection()
-        ]
-        connections.forEach { $0.start() }
-
-        let expect = expectation(description: "Waiting")
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 28) {
-            connections.forEach { $0.stop() }
-            expect.fulfill()
-        }
-
-        wait(for: [expect], timeout: 30)
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
