@@ -14,7 +14,7 @@
 #include "Instance.hpp"
 #include <thread>
 
-#define BUFFER_SIZE 4096
+#define BUFFER_SIZE 65536
 
 class Connection::Xplane::XplaneConnection : public Connection::Instance {
 private:
@@ -29,7 +29,7 @@ private:
     void receiveData();
 
 public:
-    int receivePort = 49000;
+    int receivePort = 49001;
     Connection::Listener *listener;
 
     XplaneConnection();
@@ -37,6 +37,11 @@ public:
     ~XplaneConnection();
     int establishConnection();
     void disconnect();
+    void sendData(unsigned char *data, size_t length);
+
+    inline bool isServerConnectionEstablished() {
+        return remoteAddress.sin_addr.s_addr != 0;
+    }
 
     Connection::Xplane::XplaneConnection & operator= (const Connection::Xplane::XplaneConnection &other) {
         if (this != &other) {

@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <netdb.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 #include <string>
 
 Connection::Xplane::XplaneConnection::XplaneConnection() {
@@ -44,7 +46,7 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
     memset((char *) &ownAddress, 0, sizeof(ownAddress));
     ownAddress.sin_family = AF_INET;
     ownAddress.sin_addr.s_addr = INADDR_ANY;
-    ownAddress.sin_port = htons(receivePort);
+    ownAddress.sin_port = htons(INADDR_ANY);
 
     addrLen = sizeof(remoteAddress);
 
@@ -67,7 +69,7 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
 
 void Connection::Xplane::XplaneConnection::receiveData() {
     while (isActive) {
-        ssize_t bytesReceived = recvfrom(socketInfo, buffer, BUFFER_SIZE, 0, (struct sockaddr *) &remoteAddress, &addrLen);
+        ssize_t bytesReceived = recv(socketInfo, buffer, BUFFER_SIZE, 0);
         if (bytesReceived > 0) {
             buffer[bytesReceived] = 0;
         } else {
@@ -79,4 +81,8 @@ void Connection::Xplane::XplaneConnection::receiveData() {
 void Connection::Xplane::XplaneConnection::disconnect() {
     isActive = false;
     close(socketInfo);
+}
+
+void Connection::Xplane::XplaneConnection::sendData(unsigned char *data, size_t length) {
+    sendto(socketInfo, data, length, 0, (struct sockaddr *) &remoteAddress, sizeof(remoteAddress));
 }

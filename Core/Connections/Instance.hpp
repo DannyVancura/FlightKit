@@ -19,6 +19,9 @@ public:
     Instance(){}
     virtual int establishConnection() = 0;
     virtual void disconnect() = 0;
+    virtual void sendData(unsigned char *data, size_t length) = 0;
+
+    bool isServerConnectionEstablished();
 };
 
 #endif

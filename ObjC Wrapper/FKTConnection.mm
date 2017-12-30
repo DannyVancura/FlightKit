@@ -37,6 +37,10 @@ Connection::Xplane::XplaneListener xplaneListener;
     return self;
 }
 
+- (bool) isConnected {
+    return xplaneConnection.isServerConnectionEstablished();
+}
+
 - (void) start {
     xplaneConnection.establishConnection();
 }

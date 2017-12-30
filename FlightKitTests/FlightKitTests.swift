@@ -22,19 +22,20 @@ class FlightKitTests: XCTestCase {
     }
     
     func testRunning() {
-        let connections = [
-            FKTConnection()
-        ]
-        connections.forEach { $0.start() }
+        let connection = FKTConnection()
+
+        XCTAssertFalse(connection.isConnected())
+        connection.start()
 
         let expect = expectation(description: "Waiting")
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 28) {
-            connections.forEach { $0.stop() }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            XCTAssertTrue(connection.isConnected())
+            connection.stop()
             expect.fulfill()
         }
 
-        wait(for: [expect], timeout: 30)
+        wait(for: [expect], timeout: 4)
     }
     
     func testPerformanceExample() {

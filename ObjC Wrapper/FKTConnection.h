@@ -10,6 +10,8 @@
 
 @interface FKTConnection : NSObject
 
+- (bool) isConnected;
+
 - (void) start;
 
 - (void) stop;
