@@ -12,9 +12,11 @@
 namespace Data {
     class Airplane;
     class Engine;
+    class Message;
 
     namespace Xplane {
         class XplaneBuffer;
+        class XplaneMessage;
     }
 }
 

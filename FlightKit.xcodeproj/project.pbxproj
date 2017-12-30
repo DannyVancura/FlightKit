@@ -87,6 +87,18 @@
 		B5D5E3601FF74BD8003B8F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D5E35E1FF74BD8003B8F2C /* Main.storyboard */; };
 		B5D5E3661FF74BE9003B8F2C /* FlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89EA71FF4341E002A2A37 /* FlightKit.framework */; };
 		B5D5E3671FF74BE9003B8F2C /* FlightKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89EA71FF4341E002A2A37 /* FlightKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5D5E36D1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */; };
+		B5D5E36E1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */; };
+		B5D5E36F1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */; };
+		B5D5E3701FF785F7003B8F2C /* XplaneMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */; };
+		B5D5E3711FF785F7003B8F2C /* XplaneMessage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */; };
+		B5D5E3721FF785F7003B8F2C /* XplaneMessage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */; };
+		B5D5E3731FF785F7003B8F2C /* XplaneMessage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */; };
+		B5D5E3741FF785F7003B8F2C /* XplaneMessage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */; };
+		B5D5E3761FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
+		B5D5E3771FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
+		B5D5E3781FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
+		B5D5E3791FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +188,9 @@
 		B5D5E35F1FF74BD8003B8F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5D5E3611FF74BD8003B8F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5D5E3621FF74BD8003B8F2C /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XplaneMessage.cpp; sourceTree = "<group>"; };
+		B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XplaneMessage.hpp; sourceTree = "<group>"; };
+		B5D5E3751FF789B3003B8F2C /* Message.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Message.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				B5C89F231FF45A79002A2A37 /* Data.hpp */,
+				B5D5E3751FF789B3003B8F2C /* Message.hpp */,
 				B5C89F0F1FF44153002A2A37 /* Airplane.cpp */,
 				B5C89F101FF44153002A2A37 /* Airplane.hpp */,
 				B5C89F191FF44340002A2A37 /* Engine.cpp */,
@@ -401,6 +417,8 @@
 			children = (
 				B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */,
 				B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */,
+				B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */,
+				B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */,
 			);
 			path = Xplane;
 			sourceTree = "<group>";
@@ -432,12 +450,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D5E3711FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
 				B5C89EF51FF43632002A2A37 /* Listener.hpp in Headers */,
 				B5C89F5E1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F011FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F451FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F241FF45A79002A2A37 /* Data.hpp in Headers */,
 				B5C89F151FF44153002A2A37 /* Airplane.hpp in Headers */,
+				B5D5E3761FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F1F1FF44340002A2A37 /* Engine.hpp in Headers */,
 				B5C89EF01FF434F4002A2A37 /* Instance.hpp in Headers */,
 				B5C89F291FF45AB1002A2A37 /* Connection.hpp in Headers */,
@@ -450,12 +470,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D5E3721FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
 				B5C89EF61FF43633002A2A37 /* Listener.hpp in Headers */,
 				B5C89F5F1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3C1FF4930F002A2A37 /* FlightKit.h in Headers */,
 				B5C89F461FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F021FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F251FF45A79002A2A37 /* Data.hpp in Headers */,
+				B5D5E3771FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F161FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F201FF44340002A2A37 /* Engine.hpp in Headers */,
 				B5C89EF11FF434F4002A2A37 /* Instance.hpp in Headers */,
@@ -468,12 +490,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D5E3731FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
 				B5C89EF71FF43634002A2A37 /* Listener.hpp in Headers */,
 				B5C89F601FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3D1FF49316002A2A37 /* FlightKit.h in Headers */,
 				B5C89F471FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F031FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F261FF45A79002A2A37 /* Data.hpp in Headers */,
+				B5D5E3781FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F171FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F211FF44340002A2A37 /* Engine.hpp in Headers */,
 				B5C89EF21FF434F4002A2A37 /* Instance.hpp in Headers */,
@@ -486,12 +510,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D5E3741FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
 				B5C89EF81FF43634002A2A37 /* Listener.hpp in Headers */,
 				B5C89F611FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3E1FF49323002A2A37 /* FlightKit.h in Headers */,
 				B5C89F481FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F041FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F271FF45A79002A2A37 /* Data.hpp in Headers */,
+				B5D5E3791FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F181FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F221FF44340002A2A37 /* Engine.hpp in Headers */,
 				B5C89EF31FF434F4002A2A37 /* Instance.hpp in Headers */,
@@ -790,6 +816,7 @@
 				B5C89F051FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5A1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1B1FF44340002A2A37 /* Engine.cpp in Sources */,
+				B5D5E36D1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */,
 				B5C89F411FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F111FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F301FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
@@ -811,6 +838,7 @@
 				B5C89F061FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5B1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1C1FF44340002A2A37 /* Engine.cpp in Sources */,
+				B5D5E36E1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */,
 				B5C89F421FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F121FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F311FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
@@ -832,6 +860,7 @@
 				B5C89F071FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5C1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1D1FF44340002A2A37 /* Engine.cpp in Sources */,
+				B5D5E36F1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */,
 				B5C89F431FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F131FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F321FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
@@ -853,6 +882,7 @@
 				B5C89F081FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5D1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1E1FF44340002A2A37 /* Engine.cpp in Sources */,
+				B5D5E3701FF785F7003B8F2C /* XplaneMessage.cpp in Sources */,
 				B5C89F441FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F141FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F331FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,

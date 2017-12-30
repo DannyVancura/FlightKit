@@ -11,6 +11,7 @@
 #import "Listener.hpp"
 #import "XplaneConnection.hpp"
 #import "XplaneListener.hpp"
+#import "XplaneMessage.hpp"
 
 @implementation FKTConnection
 

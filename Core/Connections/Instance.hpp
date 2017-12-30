@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "Connection.hpp"
+#include "Message.hpp"
 
 class Connection::Instance {
 public:
@@ -19,7 +20,7 @@ public:
     Instance(){}
     virtual int establishConnection() = 0;
     virtual void disconnect() = 0;
-    virtual void sendData(unsigned char *data, size_t length) = 0;
+    virtual void sendMessage(Data::Message &message) = 0;
 
     bool isServerConnectionEstablished();
 };

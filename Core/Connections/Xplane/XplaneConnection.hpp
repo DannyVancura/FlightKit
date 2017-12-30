@@ -38,7 +38,7 @@ public:
     ~XplaneConnection();
     int establishConnection();
     void disconnect();
-    void sendData(unsigned char *data, size_t length);
+    void sendMessage(Data::Message &message);
 
     inline bool isServerConnectionEstablished() {
         return remoteAddress.sin_addr.s_addr != 0;
