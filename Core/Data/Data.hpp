@@ -14,7 +14,7 @@ namespace Data {
     class Engine;
 
     namespace Xplane {
-        class Buffer;
+        class XplaneBuffer;
     }
 }
 

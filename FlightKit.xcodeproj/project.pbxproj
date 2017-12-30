@@ -65,14 +65,14 @@
 		B5C89F3C1FF4930F002A2A37 /* FlightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89E8B1FF433EB002A2A37 /* FlightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C89F3D1FF49316002A2A37 /* FlightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89E8B1FF433EB002A2A37 /* FlightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C89F3E1FF49323002A2A37 /* FlightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89E8B1FF433EB002A2A37 /* FlightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5C89F411FF497CD002A2A37 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* Buffer.cpp */; };
-		B5C89F421FF497CD002A2A37 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* Buffer.cpp */; };
-		B5C89F431FF497CD002A2A37 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* Buffer.cpp */; };
-		B5C89F441FF497CD002A2A37 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* Buffer.cpp */; };
-		B5C89F451FF497CD002A2A37 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* Buffer.hpp */; };
-		B5C89F461FF497CD002A2A37 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* Buffer.hpp */; };
-		B5C89F471FF497CD002A2A37 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* Buffer.hpp */; };
-		B5C89F481FF497CD002A2A37 /* Buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* Buffer.hpp */; };
+		B5C89F411FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */; };
+		B5C89F421FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */; };
+		B5C89F431FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */; };
+		B5C89F441FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */; };
+		B5C89F451FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */; };
+		B5C89F461FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */; };
+		B5C89F471FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */; };
+		B5C89F481FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */; };
 		B5C89F5A1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F581FF4E6F3002A2A37 /* XplaneListener.cpp */; };
 		B5C89F5B1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F581FF4E6F3002A2A37 /* XplaneListener.cpp */; };
 		B5C89F5C1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5C89F581FF4E6F3002A2A37 /* XplaneListener.cpp */; };
@@ -81,6 +81,12 @@
 		B5C89F5F1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F591FF4E6F3002A2A37 /* XplaneListener.hpp */; };
 		B5C89F601FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F591FF4E6F3002A2A37 /* XplaneListener.hpp */; };
 		B5C89F611FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89F591FF4E6F3002A2A37 /* XplaneListener.hpp */; };
+		B5D5E3591FF74BD8003B8F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5E3581FF74BD8003B8F2C /* AppDelegate.swift */; };
+		B5D5E35B1FF74BD8003B8F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5E35A1FF74BD8003B8F2C /* ViewController.swift */; };
+		B5D5E35D1FF74BD8003B8F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D5E35C1FF74BD8003B8F2C /* Assets.xcassets */; };
+		B5D5E3601FF74BD8003B8F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D5E35E1FF74BD8003B8F2C /* Main.storyboard */; };
+		B5D5E3661FF74BE9003B8F2C /* FlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89EA71FF4341E002A2A37 /* FlightKit.framework */; };
+		B5D5E3671FF74BE9003B8F2C /* FlightKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89EA71FF4341E002A2A37 /* FlightKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +111,28 @@
 			remoteGlobalIDString = B5C89EC21FF4347B002A2A37;
 			remoteInfo = "FlightKit (tvOS)";
 		};
+		B5D5E3681FF74BE9003B8F2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C89E7F1FF433EB002A2A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C89EA61FF4341E002A2A37;
+			remoteInfo = "FlightKit (macOS)";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5D5E36A1FF74BE9003B8F2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5D5E3671FF74BE9003B8F2C /* FlightKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B5C89E881FF433EB002A2A37 /* FlightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,10 +165,17 @@
 		B5C89F281FF45AB1002A2A37 /* Connection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
 		B5C89F2E1FF4667A002A2A37 /* XplaneConnection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XplaneConnection.cpp; sourceTree = "<group>"; };
 		B5C89F2F1FF4667A002A2A37 /* XplaneConnection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XplaneConnection.hpp; sourceTree = "<group>"; };
-		B5C89F3F1FF497CD002A2A37 /* Buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
-		B5C89F401FF497CD002A2A37 /* Buffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
+		B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XplaneBuffer.cpp; sourceTree = "<group>"; };
+		B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XplaneBuffer.hpp; sourceTree = "<group>"; };
 		B5C89F581FF4E6F3002A2A37 /* XplaneListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XplaneListener.cpp; sourceTree = "<group>"; };
 		B5C89F591FF4E6F3002A2A37 /* XplaneListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XplaneListener.hpp; sourceTree = "<group>"; };
+		B5D5E3561FF74BD8003B8F2C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D5E3581FF74BD8003B8F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5D5E35A1FF74BD8003B8F2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5D5E35C1FF74BD8003B8F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5D5E35F1FF74BD8003B8F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5D5E3611FF74BD8003B8F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D5E3621FF74BD8003B8F2C /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +231,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5D5E3531FF74BD8003B8F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D5E3661FF74BE9003B8F2C /* FlightKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -212,7 +254,9 @@
 				B5C89EC41FF4347B002A2A37 /* FlightKit (tvOS) */,
 				B5C89ECF1FF4347B002A2A37 /* FlightKit (tvOS)Tests */,
 				B5C89EE01FF43490002A2A37 /* FlightKit (watchOS) */,
+				B5D5E3571FF74BD8003B8F2C /* Demo */,
 				B5C89E891FF433EB002A2A37 /* Products */,
+				B5D5E34E1FF74B60003B8F2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +270,7 @@
 				B5C89EC31FF4347B002A2A37 /* FlightKit.framework */,
 				B5C89ECB1FF4347B002A2A37 /* FlightKit (tvOS)Tests.xctest */,
 				B5C89EDF1FF43490002A2A37 /* FlightKit.framework */,
+				B5D5E3561FF74BD8003B8F2C /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,10 +399,30 @@
 		B5C89F531FF49982002A2A37 /* Xplane */ = {
 			isa = PBXGroup;
 			children = (
-				B5C89F3F1FF497CD002A2A37 /* Buffer.cpp */,
-				B5C89F401FF497CD002A2A37 /* Buffer.hpp */,
+				B5C89F3F1FF497CD002A2A37 /* XplaneBuffer.cpp */,
+				B5C89F401FF497CD002A2A37 /* XplaneBuffer.hpp */,
 			);
 			path = Xplane;
+			sourceTree = "<group>";
+		};
+		B5D5E34E1FF74B60003B8F2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5D5E3571FF74BD8003B8F2C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B5D5E3581FF74BD8003B8F2C /* AppDelegate.swift */,
+				B5D5E35A1FF74BD8003B8F2C /* ViewController.swift */,
+				B5D5E35C1FF74BD8003B8F2C /* Assets.xcassets */,
+				B5D5E35E1FF74BD8003B8F2C /* Main.storyboard */,
+				B5D5E3611FF74BD8003B8F2C /* Info.plist */,
+				B5D5E3621FF74BD8003B8F2C /* Demo.entitlements */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +435,7 @@
 				B5C89EF51FF43632002A2A37 /* Listener.hpp in Headers */,
 				B5C89F5E1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F011FF4375A002A2A37 /* FKTConnection.h in Headers */,
-				B5C89F451FF497CD002A2A37 /* Buffer.hpp in Headers */,
+				B5C89F451FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F241FF45A79002A2A37 /* Data.hpp in Headers */,
 				B5C89F151FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F1F1FF44340002A2A37 /* Engine.hpp in Headers */,
@@ -388,7 +453,7 @@
 				B5C89EF61FF43633002A2A37 /* Listener.hpp in Headers */,
 				B5C89F5F1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3C1FF4930F002A2A37 /* FlightKit.h in Headers */,
-				B5C89F461FF497CD002A2A37 /* Buffer.hpp in Headers */,
+				B5C89F461FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F021FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F251FF45A79002A2A37 /* Data.hpp in Headers */,
 				B5C89F161FF44153002A2A37 /* Airplane.hpp in Headers */,
@@ -406,7 +471,7 @@
 				B5C89EF71FF43634002A2A37 /* Listener.hpp in Headers */,
 				B5C89F601FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3D1FF49316002A2A37 /* FlightKit.h in Headers */,
-				B5C89F471FF497CD002A2A37 /* Buffer.hpp in Headers */,
+				B5C89F471FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F031FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F261FF45A79002A2A37 /* Data.hpp in Headers */,
 				B5C89F171FF44153002A2A37 /* Airplane.hpp in Headers */,
@@ -424,7 +489,7 @@
 				B5C89EF81FF43634002A2A37 /* Listener.hpp in Headers */,
 				B5C89F611FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3E1FF49323002A2A37 /* FlightKit.h in Headers */,
-				B5C89F481FF497CD002A2A37 /* Buffer.hpp in Headers */,
+				B5C89F481FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F041FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F271FF45A79002A2A37 /* Data.hpp in Headers */,
 				B5C89F181FF44153002A2A37 /* Airplane.hpp in Headers */,
@@ -564,6 +629,25 @@
 			productReference = B5C89EDF1FF43490002A2A37 /* FlightKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B5D5E3551FF74BD8003B8F2C /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D5E3631FF74BD8003B8F2C /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				B5D5E3521FF74BD8003B8F2C /* Sources */,
+				B5D5E3531FF74BD8003B8F2C /* Frameworks */,
+				B5D5E3541FF74BD8003B8F2C /* Resources */,
+				B5D5E36A1FF74BE9003B8F2C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5D5E3691FF74BE9003B8F2C /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = B5D5E3561FF74BD8003B8F2C /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -606,6 +690,10 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
+					B5D5E3551FF74BD8003B8F2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B5C89E821FF433EB002A2A37 /* Build configuration list for PBXProject "FlightKit" */;
@@ -614,6 +702,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B5C89E7E1FF433EB002A2A37;
 			productRefGroup = B5C89E891FF433EB002A2A37 /* Products */;
@@ -627,6 +716,7 @@
 				B5C89EC21FF4347B002A2A37 /* FlightKit (tvOS) */,
 				B5C89ECA1FF4347B002A2A37 /* FlightKit (tvOS)Tests */,
 				B5C89EDE1FF43490002A2A37 /* FlightKit (watchOS) */,
+				B5D5E3551FF74BD8003B8F2C /* Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -681,6 +771,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5D5E3541FF74BD8003B8F2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D5E35D1FF74BD8003B8F2C /* Assets.xcassets in Resources */,
+				B5D5E3601FF74BD8003B8F2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -691,7 +790,7 @@
 				B5C89F051FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5A1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1B1FF44340002A2A37 /* Engine.cpp in Sources */,
-				B5C89F411FF497CD002A2A37 /* Buffer.cpp in Sources */,
+				B5C89F411FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F111FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F301FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
@@ -712,7 +811,7 @@
 				B5C89F061FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5B1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1C1FF44340002A2A37 /* Engine.cpp in Sources */,
-				B5C89F421FF497CD002A2A37 /* Buffer.cpp in Sources */,
+				B5C89F421FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F121FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F311FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
@@ -733,7 +832,7 @@
 				B5C89F071FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5C1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1D1FF44340002A2A37 /* Engine.cpp in Sources */,
-				B5C89F431FF497CD002A2A37 /* Buffer.cpp in Sources */,
+				B5C89F431FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F131FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F321FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
@@ -754,9 +853,18 @@
 				B5C89F081FF4375A002A2A37 /* FKTConnection.mm in Sources */,
 				B5C89F5D1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
 				B5C89F1E1FF44340002A2A37 /* Engine.cpp in Sources */,
-				B5C89F441FF497CD002A2A37 /* Buffer.cpp in Sources */,
+				B5C89F441FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B5C89F141FF44153002A2A37 /* Airplane.cpp in Sources */,
 				B5C89F331FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D5E3521FF74BD8003B8F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D5E35B1FF74BD8003B8F2C /* ViewController.swift in Sources */,
+				B5D5E3591FF74BD8003B8F2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,7 +886,23 @@
 			target = B5C89EC21FF4347B002A2A37 /* FlightKit (tvOS) */;
 			targetProxy = B5C89ECD1FF4347B002A2A37 /* PBXContainerItemProxy */;
 		};
+		B5D5E3691FF74BE9003B8F2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C89EA61FF4341E002A2A37 /* FlightKit (macOS) */;
+			targetProxy = B5D5E3681FF74BE9003B8F2C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5D5E35E1FF74BD8003B8F2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D5E35F1FF74BD8003B8F2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B5C89E9A1FF433EB002A2A37 /* Debug */ = {
@@ -1184,6 +1308,44 @@
 			};
 			name = Release;
 		};
+		B5D5E3641FF74BD8003B8F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VVXA4NYT9;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B5D5E3651FF74BD8003B8F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VVXA4NYT9;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1255,6 +1417,15 @@
 			buildConfigurations = (
 				B5C89EE51FF43490002A2A37 /* Debug */,
 				B5C89EE61FF43490002A2A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D5E3631FF74BD8003B8F2C /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D5E3641FF74BD8003B8F2C /* Debug */,
+				B5D5E3651FF74BD8003B8F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

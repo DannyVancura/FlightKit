@@ -17,8 +17,8 @@ class Connection::Listener {
 public:
     Listener(){}
     virtual void didEstablishConnection(Connection::Instance *connection)=0;
-    virtual void didReceiveAirplaneData(Data::Airplane airplaneData)=0;
-    virtual void didReceiveOtherAircraft(Data::Airplane otherAircraft[])=0;
+    virtual void didReceiveAirplaneData(Data::Airplane *airplaneData)=0;
+    virtual void didReceiveOtherAircraft(Data::Airplane *otherAircraft[])=0;
 };
 
 #endif /* Listener_h */

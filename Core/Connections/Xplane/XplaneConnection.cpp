@@ -8,6 +8,8 @@
 
 #include "XplaneConnection.hpp"
 #include "Listener.hpp"
+#include "XplaneBuffer.hpp"
+
 #include <sys/socket.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -45,8 +47,8 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
 
     memset((char *) &ownAddress, 0, sizeof(ownAddress));
     ownAddress.sin_family = AF_INET;
-    ownAddress.sin_addr.s_addr = INADDR_ANY;
-    ownAddress.sin_port = htons(INADDR_ANY);
+    ownAddress.sin_addr.s_addr = htonl(INADDR_ANY);
+    ownAddress.sin_port = htons(receivePort);
 
     addrLen = sizeof(remoteAddress);
 
@@ -69,9 +71,12 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
 
 void Connection::Xplane::XplaneConnection::receiveData() {
     while (isActive) {
-        ssize_t bytesReceived = recv(socketInfo, buffer, BUFFER_SIZE, 0);
+        ssize_t bytesReceived = recvfrom(socketInfo, buffer, BUFFER_SIZE, 0, (struct sockaddr *) &remoteAddress, &addrLen);
         if (bytesReceived > 0) {
             buffer[bytesReceived] = 0;
+            Data::Xplane::XplaneBuffer rawData = Data::Xplane::XplaneBuffer(buffer, bytesReceived);
+            listener->didReceiveAirplaneData(rawData.airplane);
+            listener->didReceiveOtherAircraft(rawData.otherAircraft);
         } else {
             perror("Failed to receive.");
         }

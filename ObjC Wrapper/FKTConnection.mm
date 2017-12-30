@@ -14,39 +14,44 @@
 
 @implementation FKTConnection
 
-Connection::Xplane::XplaneConnection xplaneConnection;
+Connection::Xplane::XplaneConnection *xplaneConnection;
 Connection::Xplane::XplaneListener xplaneListener;
 
-- (instancetype)init
-{
+- (nonnull id) init {
+    self = [self init: [@49001 integerValue]];
+
+    return self;
+}
+
+- (nonnull id) init:(NSInteger) port {
     self = [super init];
     if (self) {
-        xplaneConnection = Connection::Xplane::XplaneConnection(49000);
+        xplaneConnection = new Connection::Xplane::XplaneConnection((int) port);
         xplaneListener = Connection::Xplane::XplaneListener();
         xplaneListener.connectionCallback = ^void (Connection::Instance *instance) {
-            NSLog(@"Did connect.");
+
         };
-        xplaneListener.airplaneDataCallback = ^void (Data::Airplane airplane) {
-            NSLog(@"Did receive airplane.");
+        xplaneListener.airplaneDataCallback = ^void (Data::Airplane *airplane) {
+
         };
-        xplaneListener.otherAircraftDataCallback = ^void (Data::Airplane aircraft[]) {
-            NSLog(@"Did receive other aircraft");
+        xplaneListener.otherAircraftDataCallback = ^void (Data::Airplane *aircraft[]) {
+            
         };
-        xplaneConnection.listener = &xplaneListener;
+        xplaneConnection->listener = &xplaneListener;
     }
     return self;
 }
 
 - (bool) isConnected {
-    return xplaneConnection.isServerConnectionEstablished();
+    return xplaneConnection->isServerConnectionEstablished();
 }
 
 - (void) start {
-    xplaneConnection.establishConnection();
+    xplaneConnection->establishConnection();
 }
 
 - (void) stop {
-    xplaneConnection.disconnect();
+    xplaneConnection->disconnect();
 }
 
 @end

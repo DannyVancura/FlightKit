@@ -10,6 +10,8 @@
 
 @interface FKTConnection : NSObject
 
+- (nonnull id) init:(NSInteger) port;
+
 - (bool) isConnected;
 
 - (void) start;

@@ -29,6 +29,7 @@ private:
     void receiveData();
 
 public:
+    int sendPort = 49000;
     int receivePort = 49001;
     Connection::Listener *listener;
 
@@ -41,18 +42,6 @@ public:
 
     inline bool isServerConnectionEstablished() {
         return remoteAddress.sin_addr.s_addr != 0;
-    }
-
-    Connection::Xplane::XplaneConnection & operator= (const Connection::Xplane::XplaneConnection &other) {
-        if (this != &other) {
-            socketInfo = other.socketInfo;
-            ownAddress = other.ownAddress;
-            remoteAddress = other.remoteAddress;
-            addrLen = other.addrLen;
-            memcpy(&buffer, &other.buffer, BUFFER_SIZE);
-            receivePort = other.receivePort;
-        }
-        return *this;
     }
 };
 
