@@ -82,7 +82,8 @@ void Connection::Xplane::XplaneConnection::receiveData() {
             rawData.debug();
             if (once) {
                 once = false;
-                Data::Xplane::XplaneMessage message = Data::Xplane::XplaneMessage::keyPress('p');
+                // Play a beeping sound indicating that we are connected.
+                Data::Xplane::XplaneMessage message = Data::Xplane::XplaneMessage::sound(1, 1, (char *) "Resources/sounds/alert/transonic.wav");
                 sendMessage(message);
             }
         } else {
