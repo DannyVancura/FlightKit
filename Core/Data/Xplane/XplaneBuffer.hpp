@@ -39,8 +39,9 @@ private:
     std::vector<float> invalidOrValue(int index);
 public:
     XplaneBuffer(unsigned char *data, long length);
-    Airplane *airplane;
-    Airplane *otherAircraft[MAX_NUMBER_OF_AIRCRAFT];
+    ~XplaneBuffer();
+    Airplane airplane;
+    std::vector<Airplane> otherAircraft;
 
     void debug();
 };

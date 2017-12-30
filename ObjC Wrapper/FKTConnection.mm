@@ -31,10 +31,10 @@ Connection::Xplane::XplaneListener xplaneListener;
         xplaneListener.connectionCallback = ^void (Connection::Instance *instance) {
 
         };
-        xplaneListener.airplaneDataCallback = ^void (Data::Airplane *airplane) {
+        xplaneListener.airplaneDataCallback = ^void (Data::Airplane airplane) {
 
         };
-        xplaneListener.otherAircraftDataCallback = ^void (Data::Airplane *aircraft[]) {
+        xplaneListener.otherAircraftDataCallback = ^void (std::vector<Data::Airplane> otherAircraft) {
             
         };
         xplaneConnection->listener = &xplaneListener;

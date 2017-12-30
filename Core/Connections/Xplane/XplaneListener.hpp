@@ -13,16 +13,17 @@
 #include "Connection.hpp"
 #include "Listener.hpp"
 #include <functional>
+#include <vector>
 
 class Connection::Xplane::XplaneListener: public Connection::Listener {
 public:
     std::function<void(Connection::Instance *instance)> connectionCallback = {};
-    std::function<void(Data::Airplane *airplaneData)> airplaneDataCallback = {};
-    std::function<void(Data::Airplane *otherAircraft[])> otherAircraftDataCallback = {};
+    std::function<void(Data::Airplane airplaneData)> airplaneDataCallback = {};
+    std::function<void(std::vector<Data::Airplane> otherAircraft)> otherAircraftDataCallback = {};
 
     void didEstablishConnection(Connection::Instance *connection);
-    void didReceiveAirplaneData(Data::Airplane *airplaneData);
-    void didReceiveOtherAircraft(Data::Airplane *otherAircraft[]);
+    void didReceiveAirplaneData(Data::Airplane airplaneData);
+    void didReceiveOtherAircraft(std::vector<Data::Airplane> otherAircraft);
 };
 
 #endif /* XplaneListener_hpp */

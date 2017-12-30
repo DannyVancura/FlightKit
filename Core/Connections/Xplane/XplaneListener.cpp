@@ -12,10 +12,10 @@ void Connection::Xplane::XplaneListener::didEstablishConnection(Connection::Inst
     connectionCallback(connection);
 }
 
-void Connection::Xplane::XplaneListener::didReceiveAirplaneData(Data::Airplane *airplaneData) {
+void Connection::Xplane::XplaneListener::didReceiveAirplaneData(Data::Airplane airplaneData) {
     airplaneDataCallback(airplaneData);
 }
 
-void Connection::Xplane::XplaneListener::didReceiveOtherAircraft(Data::Airplane *otherAircraft[]) {
+void Connection::Xplane::XplaneListener::didReceiveOtherAircraft(std::vector<Data::Airplane> otherAircraft) {
     otherAircraftDataCallback(otherAircraft);
 }
