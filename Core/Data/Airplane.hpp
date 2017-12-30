@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <array>
+#include <vector>
 #include "Engine.hpp"
 
 class Data::Airplane {
@@ -40,16 +41,7 @@ public:
     double headingMag;
 
     // MARK: - Engines
-    std::array<Engine, 0> engines;
-
-    // MARK: - Functions
-
-    /**
-     Returns the number of engines on this aircraft.
-
-     @return Number of engines.
-     */
-    size_t numberOfEngines();
+    std::vector<Engine> engines;
 };
 
 #endif /* Airplane_hpp */

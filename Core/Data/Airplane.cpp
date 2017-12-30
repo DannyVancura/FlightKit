@@ -8,6 +8,3 @@
 
 #include "Airplane.hpp"
 
-size_t Data::Airplane::numberOfEngines() {
-    return engines.size();
-}
