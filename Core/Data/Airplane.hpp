@@ -23,7 +23,6 @@ public:
     // MARK: - Position Data
     double latitude;
     double longitude;
-    double altitudeIndicatedAGL;
     double altitudeIndicatedMSL;
     double altitudeTrueAGL;
     double altitudeTrueMSL;

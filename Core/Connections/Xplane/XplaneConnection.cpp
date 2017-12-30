@@ -77,6 +77,7 @@ void Connection::Xplane::XplaneConnection::receiveData() {
             Data::Xplane::XplaneBuffer rawData = Data::Xplane::XplaneBuffer(buffer, bytesReceived);
             listener->didReceiveAirplaneData(rawData.airplane);
             listener->didReceiveOtherAircraft(rawData.otherAircraft);
+            rawData.debug();
         } else {
             perror("Failed to receive.");
         }
