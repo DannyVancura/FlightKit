@@ -20,7 +20,7 @@ public:
     Instance(){}
     virtual int establishConnection() = 0;
     virtual void disconnect() = 0;
-    virtual void sendMessage(Data::Message &message) = 0;
+    virtual ssize_t sendMessage(Data::Message &message) = 0;
 
     bool isServerConnectionEstablished();
 };

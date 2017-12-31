@@ -19,15 +19,31 @@ Connection::Xplane::XplaneConnection *xplaneConnection;
 Connection::Xplane::XplaneListener xplaneListener;
 
 - (nonnull id) init {
-    self = [self init: [@49001 integerValue]];
+    self = [self initWithIP: nil receivingOn:49001 sendingTo:49000];
 
     return self;
 }
 
-- (nonnull id) init:(NSInteger) port {
+- (nonnull id) initReceivingOn:(NSInteger) inPort {
+    self = [self initWithIP:nil receivingOn:inPort sendingTo:49000];
+
+    return self;
+}
+
+- (nonnull id) initReceivingOn:(NSInteger) inPort sendingTo:(NSInteger) outPort {
+    self = [self initWithIP:nil receivingOn:inPort sendingTo:outPort];
+
+    return self;
+}
+
+- (nonnull id) initWithIP:(nullable NSString *)ip receivingOn:(NSInteger) inPort sendingTo:(NSInteger) outPort {
     self = [super init];
     if (self) {
-        xplaneConnection = new Connection::Xplane::XplaneConnection((int) port);
+        if (ip) {
+            xplaneConnection = new Connection::Xplane::XplaneConnection(ip.UTF8String, (int) inPort, (int) outPort);
+        } else {
+            xplaneConnection = new Connection::Xplane::XplaneConnection((int) inPort, (int) outPort);
+        }
         xplaneListener = Connection::Xplane::XplaneListener();
         xplaneListener.connectionCallback = ^void (Connection::Instance *instance) {
 

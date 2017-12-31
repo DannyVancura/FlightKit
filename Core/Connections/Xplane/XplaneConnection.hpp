@@ -13,6 +13,7 @@
 #include <netinet/in.h>
 #include "Instance.hpp"
 #include <thread>
+#include <string>
 
 #define BUFFER_SIZE 65536
 
@@ -29,16 +30,16 @@ private:
     void receiveData();
 
 public:
-    int sendPort = 49000;
-    int receivePort = 49001;
+    int sendPort;
+    int receivePort;
     Connection::Listener *listener;
 
-    XplaneConnection();
-    XplaneConnection(int receivePort);
+    XplaneConnection(int receivePort = 49001, int sendPort = 49000);
+    XplaneConnection(std::string ip, int receivePort = 49001, int sendPort = 49000);
     ~XplaneConnection();
     int establishConnection();
     void disconnect();
-    void sendMessage(Data::Message &message);
+    ssize_t sendMessage(Data::Message &message);
 
     inline bool isServerConnectionEstablished() {
         return remoteAddress.sin_addr.s_addr != 0;

@@ -22,7 +22,7 @@ class FlightKitTests: XCTestCase {
     }
     
     func testRunning() {
-        let connection = FKTConnection(49123)
+        let connection = FKTConnection(receivingOn: 49123, sendingTo: 49001)
 
         XCTAssertFalse(connection.isConnected())
         connection.start()

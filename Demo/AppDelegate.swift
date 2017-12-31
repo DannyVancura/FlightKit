@@ -12,7 +12,7 @@ import FlightKit
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    private let connection = FKTConnection(49123)
+    private let connection = FKTConnection(receivingOn: 49123)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         connection.start()

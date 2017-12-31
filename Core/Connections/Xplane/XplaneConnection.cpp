@@ -19,12 +19,17 @@
 #include <arpa/inet.h>
 #include <string>
 
-Connection::Xplane::XplaneConnection::XplaneConnection() {
+Connection::Xplane::XplaneConnection::XplaneConnection(int receivePort, int sendPort):
+receivePort(receivePort),
+sendPort(sendPort) {}
 
-}
-
-Connection::Xplane::XplaneConnection::XplaneConnection(int receivePort) {
-    this->receivePort = receivePort;
+Connection::Xplane::XplaneConnection::XplaneConnection(std::string ip, int receivePort, int sendPort):
+receivePort(receivePort),
+sendPort(sendPort) {
+    memset((char *) &remoteAddress, 0, sizeof(remoteAddress));
+    remoteAddress.sin_family = AF_INET;
+    remoteAddress.sin_addr.s_addr = inet_addr(ip.c_str());
+    remoteAddress.sin_port = htons(sendPort);
 }
 
 Connection::Xplane::XplaneConnection::~XplaneConnection() {
@@ -97,11 +102,12 @@ void Connection::Xplane::XplaneConnection::disconnect() {
     close(socketInfo);
 }
 
-void Connection::Xplane::XplaneConnection::sendMessage(Data::Message &message) {
+ssize_t Connection::Xplane::XplaneConnection::sendMessage(Data::Message &message) {
     remoteAddress.sin_port = htons(sendPort);
     ssize_t bytesSent = sendto(socketInfo, message.data, message.length, 0, (struct sockaddr *) &remoteAddress, sizeof(remoteAddress));
 
     if (bytesSent < 0) {
         perror("Failed sending");
     }
+    return bytesSent;
 }
