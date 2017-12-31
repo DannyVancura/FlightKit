@@ -13,10 +13,14 @@
 #import "XplaneListener.hpp"
 #import "XplaneMessage.hpp"
 
-@implementation FKTConnection
+@interface FKTConnection() {
+    Connection::Xplane::XplaneConnection *xplaneConnection;
+    Connection::Xplane::XplaneListener xplaneListener;
+}
 
-Connection::Xplane::XplaneConnection *xplaneConnection;
-Connection::Xplane::XplaneListener xplaneListener;
+@end
+
+@implementation FKTConnection
 
 - (nonnull id) init {
     self = [self initWithIP: nil receivingOn:49001 sendingTo:49000];

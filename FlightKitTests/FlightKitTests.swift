@@ -23,7 +23,7 @@ class FlightKitTests: XCTestCase {
     
     func testRunning() {
         let mockServer = FKTConnection(ip: "127.0.0.1", receivingOn: 49001, sendingTo: 49123)
-        let connection = FKTConnection(receivingOn: 49123, sendingTo: 49001)
+        let connection = FKTConnection(receivingOn: 49123, sendingTo: 49000)
 
         XCTAssertFalse(connection.isConnected())
         connection.start()
