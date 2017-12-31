@@ -22,6 +22,7 @@ class FlightKitTests: XCTestCase {
     }
     
     func testRunning() {
+        let mockServer = FKTConnection(ip: "127.0.0.1", receivingOn: 49001, sendingTo: 49123)
         let connection = FKTConnection(receivingOn: 49123, sendingTo: 49001)
 
         XCTAssertFalse(connection.isConnected())
@@ -29,9 +30,14 @@ class FlightKitTests: XCTestCase {
 
         let expect = expectation(description: "Waiting")
 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            mockServer.start()
+        }
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             XCTAssertTrue(connection.isConnected())
             connection.stop()
+            mockServer.stop()
             expect.fulfill()
         }
 

@@ -26,10 +26,13 @@ sendPort(sendPort) {}
 Connection::Xplane::XplaneConnection::XplaneConnection(std::string ip, int receivePort, int sendPort):
 receivePort(receivePort),
 sendPort(sendPort) {
+    const char *cstring = ip.c_str();
     memset((char *) &remoteAddress, 0, sizeof(remoteAddress));
     remoteAddress.sin_family = AF_INET;
-    remoteAddress.sin_addr.s_addr = inet_addr(ip.c_str());
+    remoteAddress.sin_addr.s_addr = inet_addr(cstring);
     remoteAddress.sin_port = htons(sendPort);
+
+    activeConnectionAttempt = true;
 }
 
 Connection::Xplane::XplaneConnection::~XplaneConnection() {
@@ -63,12 +66,26 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
         perror("Failed to bind to socket.");
         return bindResult;
     }
+
+    if (activeConnectionAttempt) {
+        Data::Xplane::XplaneMessage message = Data::Xplane::XplaneMessage::fail(0);
+        ssize_t bytesSent = sendMessage(message);
+
+        if (bytesSent < 0) {
+            perror("Failed to send first message");
+            return (int) bytesSent;
+        } else {
+            if (listener) {
+                listener->didEstablishConnection(this);
+            }
+        }
+    }
     isActive = true;
     std::thread receiveThread(&Connection::Xplane::XplaneConnection::receiveData, this);
 
     receiveThread.detach();
 
-    if (listener) {
+    if (listener && !activeConnectionAttempt) {
         listener->didEstablishConnection(this);
     }
 

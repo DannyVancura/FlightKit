@@ -24,6 +24,7 @@ private:
     struct sockaddr_in remoteAddress;
     socklen_t addrLen;
     bool isActive = false;
+    bool activeConnectionAttempt = false;
 
     unsigned char buffer[BUFFER_SIZE];
 
