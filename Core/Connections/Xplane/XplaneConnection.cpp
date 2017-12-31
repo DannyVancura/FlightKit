@@ -95,7 +95,12 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
 void Connection::Xplane::XplaneConnection::receiveData() {
     static bool once = true;
     while (isActive) {
-        ssize_t bytesReceived = recvfrom(socketInfo, buffer, BUFFER_SIZE, 0, (struct sockaddr *) &remoteAddress, &addrLen);
+        ssize_t bytesReceived;
+        if (activeConnectionAttempt) {
+            bytesReceived = recv(socketInfo, buffer, BUFFER_SIZE, 0);
+        } else {
+            bytesReceived = recvfrom(socketInfo, buffer, BUFFER_SIZE, 0, (struct sockaddr *) &remoteAddress, &addrLen);
+        }
         if (bytesReceived > 0) {
             buffer[bytesReceived] = 0;
             Data::Xplane::XplaneBuffer rawData = Data::Xplane::XplaneBuffer(buffer, bytesReceived);
