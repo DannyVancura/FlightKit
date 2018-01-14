@@ -11,13 +11,13 @@
 
 #include <stdio.h>
 #include <netinet/in.h>
-#include "Instance.hpp"
+#include "FlightSimConnection.hpp"
 #include <thread>
 #include <string>
 
 #define BUFFER_SIZE 65536
 
-class Connection::Xplane::XplaneConnection : public Connection::Instance {
+class Connection::Xplane::XplaneConnection : public Connection::FlightSimConnection {
 private:
     int socketInfo;
     struct sockaddr_in ownAddress;
@@ -33,7 +33,7 @@ private:
 public:
     int sendPort;
     int receivePort;
-    Connection::Listener *listener;
+    Connection::FlightSimConnectionListener *listener;
 
     XplaneConnection(int receivePort = 49001, int sendPort = 49000);
     XplaneConnection(std::string ip, int receivePort = 49001, int sendPort = 49000);

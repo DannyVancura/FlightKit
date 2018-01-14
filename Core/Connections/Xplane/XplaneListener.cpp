@@ -8,7 +8,7 @@
 
 #include "XplaneListener.hpp"
 
-void Connection::Xplane::XplaneListener::didEstablishConnection(Connection::Instance *connection) {
+void Connection::Xplane::XplaneListener::didEstablishConnection(Connection::FlightSimConnection *connection) {
     connectionCallback(connection);
 }
 

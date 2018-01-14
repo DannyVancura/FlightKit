@@ -7,7 +7,7 @@
 //
 
 #include "XplaneConnection.hpp"
-#include "Listener.hpp"
+#include "FlightSimConnectionListener.hpp"
 #include "XplaneBuffer.hpp"
 #include "XplaneMessage.hpp"
 

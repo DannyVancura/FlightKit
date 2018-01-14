@@ -13,11 +13,11 @@
 #include "Connection.hpp"
 #include "Message.hpp"
 
-class Connection::Instance {
+class Connection::FlightSimConnection {
 public:
-    Connection::Listener *listener;
+    Connection::FlightSimConnectionListener *listener;
 
-    Instance(){}
+    FlightSimConnection(){}
     virtual int establishConnection() = 0;
     virtual void disconnect() = 0;
     virtual ssize_t sendMessage(Data::Message &message) = 0;

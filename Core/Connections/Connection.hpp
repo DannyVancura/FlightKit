@@ -10,8 +10,8 @@
 #define Connections_h
 
 namespace Connection {
-    class Listener;
-    class Instance;
+    class FlightSimConnectionListener;
+    class FlightSimConnection;
 
     namespace Xplane {
         class XplaneConnection;

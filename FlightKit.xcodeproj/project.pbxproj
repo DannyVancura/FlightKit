@@ -12,14 +12,14 @@
 		B5C89E991FF433EB002A2A37 /* FlightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89E8B1FF433EB002A2A37 /* FlightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C89EB01FF4341E002A2A37 /* FlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89EA71FF4341E002A2A37 /* FlightKit.framework */; };
 		B5C89ECC1FF4347B002A2A37 /* FlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89EC31FF4347B002A2A37 /* FlightKit.framework */; };
-		B5C89EF01FF434F4002A2A37 /* Instance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* Instance.hpp */; };
-		B5C89EF11FF434F4002A2A37 /* Instance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* Instance.hpp */; };
-		B5C89EF21FF434F4002A2A37 /* Instance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* Instance.hpp */; };
-		B5C89EF31FF434F4002A2A37 /* Instance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* Instance.hpp */; };
-		B5C89EF51FF43632002A2A37 /* Listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* Listener.hpp */; };
-		B5C89EF61FF43633002A2A37 /* Listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* Listener.hpp */; };
-		B5C89EF71FF43634002A2A37 /* Listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* Listener.hpp */; };
-		B5C89EF81FF43634002A2A37 /* Listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* Listener.hpp */; };
+		B5C89EF01FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* FlightSimConnection.hpp */; };
+		B5C89EF11FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* FlightSimConnection.hpp */; };
+		B5C89EF21FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* FlightSimConnection.hpp */; };
+		B5C89EF31FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EEB1FF434F4002A2A37 /* FlightSimConnection.hpp */; };
+		B5C89EF51FF43632002A2A37 /* FlightSimConnectionListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* FlightSimConnectionListener.hpp */; };
+		B5C89EF61FF43633002A2A37 /* FlightSimConnectionListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* FlightSimConnectionListener.hpp */; };
+		B5C89EF71FF43634002A2A37 /* FlightSimConnectionListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* FlightSimConnectionListener.hpp */; };
+		B5C89EF81FF43634002A2A37 /* FlightSimConnectionListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EF41FF43629002A2A37 /* FlightSimConnectionListener.hpp */; };
 		B5C89F011FF4375A002A2A37 /* FKTConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EFF1FF4375A002A2A37 /* FKTConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C89F021FF4375A002A2A37 /* FKTConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EFF1FF4375A002A2A37 /* FKTConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C89F031FF4375A002A2A37 /* FKTConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89EFF1FF4375A002A2A37 /* FKTConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,8 +165,8 @@
 		B5C89ED21FF4347B002A2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C89EDF1FF43490002A2A37 /* FlightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C89EE21FF43490002A2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C89EEB1FF434F4002A2A37 /* Instance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Instance.hpp; sourceTree = "<group>"; };
-		B5C89EF41FF43629002A2A37 /* Listener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Listener.hpp; sourceTree = "<group>"; };
+		B5C89EEB1FF434F4002A2A37 /* FlightSimConnection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FlightSimConnection.hpp; sourceTree = "<group>"; };
+		B5C89EF41FF43629002A2A37 /* FlightSimConnectionListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FlightSimConnectionListener.hpp; sourceTree = "<group>"; };
 		B5C89EFF1FF4375A002A2A37 /* FKTConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTConnection.h; sourceTree = "<group>"; };
 		B5C89F001FF4375A002A2A37 /* FKTConnection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FKTConnection.mm; sourceTree = "<group>"; };
 		B5C89F0F1FF44153002A2A37 /* Airplane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Airplane.cpp; sourceTree = "<group>"; };
@@ -364,8 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				B5C89F281FF45AB1002A2A37 /* Connection.hpp */,
-				B5C89EF41FF43629002A2A37 /* Listener.hpp */,
-				B5C89EEB1FF434F4002A2A37 /* Instance.hpp */,
+				B5C89EF41FF43629002A2A37 /* FlightSimConnectionListener.hpp */,
+				B5C89EEB1FF434F4002A2A37 /* FlightSimConnection.hpp */,
 				B5C89F2D1FF46659002A2A37 /* Xplane */,
 			);
 			path = Connections;
@@ -451,7 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D5E3711FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
-				B5C89EF51FF43632002A2A37 /* Listener.hpp in Headers */,
+				B5C89EF51FF43632002A2A37 /* FlightSimConnectionListener.hpp in Headers */,
 				B5C89F5E1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F011FF4375A002A2A37 /* FKTConnection.h in Headers */,
 				B5C89F451FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
@@ -459,7 +459,7 @@
 				B5C89F151FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5D5E3761FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F1F1FF44340002A2A37 /* Engine.hpp in Headers */,
-				B5C89EF01FF434F4002A2A37 /* Instance.hpp in Headers */,
+				B5C89EF01FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F291FF45AB1002A2A37 /* Connection.hpp in Headers */,
 				B5C89F341FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 				B5C89E991FF433EB002A2A37 /* FlightKit.h in Headers */,
@@ -471,7 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D5E3721FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
-				B5C89EF61FF43633002A2A37 /* Listener.hpp in Headers */,
+				B5C89EF61FF43633002A2A37 /* FlightSimConnectionListener.hpp in Headers */,
 				B5C89F5F1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3C1FF4930F002A2A37 /* FlightKit.h in Headers */,
 				B5C89F461FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
@@ -480,7 +480,7 @@
 				B5D5E3771FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F161FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F201FF44340002A2A37 /* Engine.hpp in Headers */,
-				B5C89EF11FF434F4002A2A37 /* Instance.hpp in Headers */,
+				B5C89EF11FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2A1FF45AB1002A2A37 /* Connection.hpp in Headers */,
 				B5C89F351FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 			);
@@ -491,7 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D5E3731FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
-				B5C89EF71FF43634002A2A37 /* Listener.hpp in Headers */,
+				B5C89EF71FF43634002A2A37 /* FlightSimConnectionListener.hpp in Headers */,
 				B5C89F601FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3D1FF49316002A2A37 /* FlightKit.h in Headers */,
 				B5C89F471FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
@@ -500,7 +500,7 @@
 				B5D5E3781FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F171FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F211FF44340002A2A37 /* Engine.hpp in Headers */,
-				B5C89EF21FF434F4002A2A37 /* Instance.hpp in Headers */,
+				B5C89EF21FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2B1FF45AB1002A2A37 /* Connection.hpp in Headers */,
 				B5C89F361FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 			);
@@ -511,7 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D5E3741FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
-				B5C89EF81FF43634002A2A37 /* Listener.hpp in Headers */,
+				B5C89EF81FF43634002A2A37 /* FlightSimConnectionListener.hpp in Headers */,
 				B5C89F611FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3E1FF49323002A2A37 /* FlightKit.h in Headers */,
 				B5C89F481FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
@@ -520,7 +520,7 @@
 				B5D5E3791FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F181FF44153002A2A37 /* Airplane.hpp in Headers */,
 				B5C89F221FF44340002A2A37 /* Engine.hpp in Headers */,
-				B5C89EF31FF434F4002A2A37 /* Instance.hpp in Headers */,
+				B5C89EF31FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2C1FF45AB1002A2A37 /* Connection.hpp in Headers */,
 				B5C89F371FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 			);

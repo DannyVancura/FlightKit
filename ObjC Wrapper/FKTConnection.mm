@@ -7,8 +7,8 @@
 //
 
 #import "FKTConnection.h"
-#import "Instance.hpp"
-#import "Listener.hpp"
+#import "FlightSimConnection.hpp"
+#import "FlightSimConnectionListener.hpp"
 #import "XplaneConnection.hpp"
 #import "XplaneListener.hpp"
 #import "XplaneMessage.hpp"
@@ -49,7 +49,7 @@
             xplaneConnection = new Connection::Xplane::XplaneConnection((int) inPort, (int) outPort);
         }
         xplaneListener = Connection::Xplane::XplaneListener();
-        xplaneListener.connectionCallback = ^void (Connection::Instance *instance) {
+        xplaneListener.connectionCallback = ^void (Connection::FlightSimConnection *instance) {
 
         };
         xplaneListener.airplaneDataCallback = ^void (Data::Airplane airplane) {
