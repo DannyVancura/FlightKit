@@ -8,6 +8,7 @@
 
 #include "DataRecording.hpp"
 #include "SQLPrepareStatement.h"
+#include "SQLInsertAircraftStatement.h"
 
 using namespace std;
 
@@ -61,7 +62,13 @@ void DataRecording::didEstablishConnection(Connection::FlightSimConnection *conn
 }
 
 void DataRecording::didReceiveAirplaneData(Data::Airplane airplaneData) {
-
+    auto statement = SQL_INSERT_AIRCRAFT_STATEMENT(airplaneData)();
+    char *errMsg;
+    auto result = sqlite3_exec(handle, statement.c_str(), NULL, NULL, &errMsg);
+    if (result) {
+        perror(errMsg);
+        throw result;
+    }
 }
 
 void DataRecording::didReceiveOtherAircraft(std::vector<Data::Airplane> otherAircraft) {

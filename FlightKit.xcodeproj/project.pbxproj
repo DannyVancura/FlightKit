@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51BDDE1200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
+		B51BDDE2200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
+		B51BDDE3200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
+		B51BDDE4200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
 		B579CA00200C27B300493754 /* AirplaneControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579C9FE200C27B300493754 /* AirplaneControls.cpp */; };
 		B579CA01200C27B300493754 /* AirplaneControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579C9FE200C27B300493754 /* AirplaneControls.cpp */; };
 		B579CA02200C27B300493754 /* AirplaneControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579C9FE200C27B300493754 /* AirplaneControls.cpp */; };
@@ -171,6 +175,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInsertAircraftStatement.h; sourceTree = "<group>"; };
 		B579C9FE200C27B300493754 /* AirplaneControls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AirplaneControls.cpp; sourceTree = "<group>"; };
 		B579C9FF200C27B300493754 /* AirplaneControls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AirplaneControls.hpp; sourceTree = "<group>"; };
 		B579CA09200C876800493754 /* DataRecording.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataRecording.cpp; sourceTree = "<group>"; };
@@ -308,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				B579CA21200C900000493754 /* SQLPrepareStatement.h */,
+				B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */,
 			);
 			path = SQL;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				B579CA04200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89F291FF45AB1002A2A37 /* Connection.hpp in Headers */,
 				B5C89F341FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
+				B51BDDE1200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */,
 				B579CA0F200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89E991FF433EB002A2A37 /* FlightKit.h in Headers */,
 				B579CA22200C900000493754 /* SQLPrepareStatement.h in Headers */,
@@ -548,6 +555,7 @@
 				B579CA05200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89EF11FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2A1FF45AB1002A2A37 /* Connection.hpp in Headers */,
+				B51BDDE2200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */,
 				B579CA10200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89F351FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 				B579CA23200C900000493754 /* SQLPrepareStatement.h in Headers */,
@@ -571,6 +579,7 @@
 				B579CA06200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89EF21FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2B1FF45AB1002A2A37 /* Connection.hpp in Headers */,
+				B51BDDE3200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */,
 				B579CA11200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89F361FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 				B579CA24200C900000493754 /* SQLPrepareStatement.h in Headers */,
@@ -594,6 +603,7 @@
 				B579CA07200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89EF31FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2C1FF45AB1002A2A37 /* Connection.hpp in Headers */,
+				B51BDDE4200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */,
 				B579CA12200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89F371FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
 				B579CA25200C900000493754 /* SQLPrepareStatement.h in Headers */,
