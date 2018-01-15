@@ -15,6 +15,22 @@
 		B579CA05200C27B300493754 /* AirplaneControls.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579C9FF200C27B300493754 /* AirplaneControls.hpp */; };
 		B579CA06200C27B300493754 /* AirplaneControls.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579C9FF200C27B300493754 /* AirplaneControls.hpp */; };
 		B579CA07200C27B300493754 /* AirplaneControls.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579C9FF200C27B300493754 /* AirplaneControls.hpp */; };
+		B579CA0B200C876800493754 /* DataRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579CA09200C876800493754 /* DataRecording.cpp */; };
+		B579CA0C200C876800493754 /* DataRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579CA09200C876800493754 /* DataRecording.cpp */; };
+		B579CA0D200C876800493754 /* DataRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579CA09200C876800493754 /* DataRecording.cpp */; };
+		B579CA0E200C876800493754 /* DataRecording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579CA09200C876800493754 /* DataRecording.cpp */; };
+		B579CA0F200C876800493754 /* DataRecording.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579CA0A200C876800493754 /* DataRecording.hpp */; };
+		B579CA10200C876800493754 /* DataRecording.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579CA0A200C876800493754 /* DataRecording.hpp */; };
+		B579CA11200C876800493754 /* DataRecording.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579CA0A200C876800493754 /* DataRecording.hpp */; };
+		B579CA12200C876800493754 /* DataRecording.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B579CA0A200C876800493754 /* DataRecording.hpp */; };
+		B579CA14200C87BF00493754 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B579CA13200C87BF00493754 /* libsqlite3.tbd */; };
+		B579CA16200C87C700493754 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B579CA15200C87C600493754 /* libsqlite3.tbd */; };
+		B579CA18200C87CD00493754 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B579CA17200C87CD00493754 /* libsqlite3.tbd */; };
+		B579CA1A200C87D200493754 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B579CA19200C87D200493754 /* libsqlite3.tbd */; };
+		B579CA22200C900000493754 /* SQLPrepareStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B579CA21200C900000493754 /* SQLPrepareStatement.h */; };
+		B579CA23200C900000493754 /* SQLPrepareStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B579CA21200C900000493754 /* SQLPrepareStatement.h */; };
+		B579CA24200C900000493754 /* SQLPrepareStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B579CA21200C900000493754 /* SQLPrepareStatement.h */; };
+		B579CA25200C900000493754 /* SQLPrepareStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B579CA21200C900000493754 /* SQLPrepareStatement.h */; };
 		B5C89E921FF433EB002A2A37 /* FlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C89E881FF433EB002A2A37 /* FlightKit.framework */; };
 		B5C89E971FF433EB002A2A37 /* FlightKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C89E961FF433EB002A2A37 /* FlightKitTests.swift */; };
 		B5C89E991FF433EB002A2A37 /* FlightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C89E8B1FF433EB002A2A37 /* FlightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -157,6 +173,13 @@
 /* Begin PBXFileReference section */
 		B579C9FE200C27B300493754 /* AirplaneControls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AirplaneControls.cpp; sourceTree = "<group>"; };
 		B579C9FF200C27B300493754 /* AirplaneControls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AirplaneControls.hpp; sourceTree = "<group>"; };
+		B579CA09200C876800493754 /* DataRecording.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataRecording.cpp; sourceTree = "<group>"; };
+		B579CA0A200C876800493754 /* DataRecording.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataRecording.hpp; sourceTree = "<group>"; };
+		B579CA13200C87BF00493754 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B579CA15200C87C600493754 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		B579CA17200C87CD00493754 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		B579CA19200C87D200493754 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		B579CA21200C900000493754 /* SQLPrepareStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLPrepareStatement.h; sourceTree = "<group>"; };
 		B5C89E881FF433EB002A2A37 /* FlightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C89E8B1FF433EB002A2A37 /* FlightKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightKit.h; sourceTree = "<group>"; };
 		B5C89E8C1FF433EB002A2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B579CA14200C87BF00493754 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B579CA16200C87C700493754 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B579CA18200C87CD00493754 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B579CA1A200C87D200493754 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +294,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B579CA08200C872F00493754 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				B579CA1B200C89EF00493754 /* SQL */,
+				B579CA09200C876800493754 /* DataRecording.cpp */,
+				B579CA0A200C876800493754 /* DataRecording.hpp */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		B579CA1B200C89EF00493754 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				B579CA21200C900000493754 /* SQLPrepareStatement.h */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
 		B5C89E7E1FF433EB002A2A37 = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +408,7 @@
 		B5C89EE71FF434AD002A2A37 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B579CA08200C872F00493754 /* Recording */,
 				B5C89F091FF437F4002A2A37 /* Data */,
 				B5C89EE81FF434B3002A2A37 /* Connections */,
 				B5C89EE91FF434B9002A2A37 /* World */,
@@ -438,6 +484,10 @@
 		B5D5E34E1FF74B60003B8F2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B579CA19200C87D200493754 /* libsqlite3.tbd */,
+				B579CA17200C87CD00493754 /* libsqlite3.tbd */,
+				B579CA15200C87C600493754 /* libsqlite3.tbd */,
+				B579CA13200C87BF00493754 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -475,7 +525,9 @@
 				B579CA04200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89F291FF45AB1002A2A37 /* Connection.hpp in Headers */,
 				B5C89F341FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
+				B579CA0F200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89E991FF433EB002A2A37 /* FlightKit.h in Headers */,
+				B579CA22200C900000493754 /* SQLPrepareStatement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +548,9 @@
 				B579CA05200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89EF11FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2A1FF45AB1002A2A37 /* Connection.hpp in Headers */,
+				B579CA10200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89F351FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
+				B579CA23200C900000493754 /* SQLPrepareStatement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +571,9 @@
 				B579CA06200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89EF21FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2B1FF45AB1002A2A37 /* Connection.hpp in Headers */,
+				B579CA11200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89F361FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
+				B579CA24200C900000493754 /* SQLPrepareStatement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +594,9 @@
 				B579CA07200C27B300493754 /* AirplaneControls.hpp in Headers */,
 				B5C89EF31FF434F4002A2A37 /* FlightSimConnection.hpp in Headers */,
 				B5C89F2C1FF45AB1002A2A37 /* Connection.hpp in Headers */,
+				B579CA12200C876800493754 /* DataRecording.hpp in Headers */,
 				B5C89F371FF4667A002A2A37 /* XplaneConnection.hpp in Headers */,
+				B579CA25200C900000493754 /* SQLPrepareStatement.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,6 +894,7 @@
 				B5C89F411FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B579CA00200C27B300493754 /* AirplaneControls.cpp in Sources */,
 				B5C89F111FF44153002A2A37 /* Airplane.cpp in Sources */,
+				B579CA0B200C876800493754 /* DataRecording.cpp in Sources */,
 				B5C89F301FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,6 +918,7 @@
 				B5C89F421FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B579CA01200C27B300493754 /* AirplaneControls.cpp in Sources */,
 				B5C89F121FF44153002A2A37 /* Airplane.cpp in Sources */,
+				B579CA0C200C876800493754 /* DataRecording.cpp in Sources */,
 				B5C89F311FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -882,6 +942,7 @@
 				B5C89F431FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B579CA02200C27B300493754 /* AirplaneControls.cpp in Sources */,
 				B5C89F131FF44153002A2A37 /* Airplane.cpp in Sources */,
+				B579CA0D200C876800493754 /* DataRecording.cpp in Sources */,
 				B5C89F321FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -905,6 +966,7 @@
 				B5C89F441FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B579CA03200C27B300493754 /* AirplaneControls.cpp in Sources */,
 				B5C89F141FF44153002A2A37 /* Airplane.cpp in Sources */,
+				B579CA0E200C876800493754 /* DataRecording.cpp in Sources */,
 				B5C89F331FF4667A002A2A37 /* XplaneConnection.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

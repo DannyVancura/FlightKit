@@ -12,10 +12,12 @@
 #import "XplaneConnection.hpp"
 #import "XplaneListener.hpp"
 #import "XplaneMessage.hpp"
+#import "DataRecording.hpp"
 
 @interface FKTConnection() {
     Connection::Xplane::XplaneConnection *xplaneConnection;
     Connection::Xplane::XplaneListener xplaneListener;
+    DataRecording *recording;
 }
 
 @end
@@ -49,18 +51,31 @@
             xplaneConnection = new Connection::Xplane::XplaneConnection((int) inPort, (int) outPort);
         }
         xplaneListener = Connection::Xplane::XplaneListener();
+        NSURL *docURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory
+                                                               inDomain:NSUserDomainMask
+                                                      appropriateForURL:nil
+                                                                 create:true
+                                                                  error:nil];
+        docURL = [docURL URLByAppendingPathComponent:@"sql_data"];
+        recording = new DataRecording((char *) [docURL.path UTF8String]);
         xplaneListener.connectionCallback = ^void (Connection::FlightSimConnection *instance) {
-
+            recording->didEstablishConnection(instance);
         };
         xplaneListener.airplaneDataCallback = ^void (Data::Airplane airplane) {
-
+            recording->didReceiveAirplaneData(airplane);
         };
         xplaneListener.otherAircraftDataCallback = ^void (std::vector<Data::Airplane> otherAircraft) {
-            
+            recording->didReceiveOtherAircraft(otherAircraft);
         };
         xplaneConnection->listener = &xplaneListener;
     }
     return self;
+}
+
+- (void)dealloc
+{
+    delete recording;
+    delete xplaneConnection;
 }
 
 - (bool) isConnected {
