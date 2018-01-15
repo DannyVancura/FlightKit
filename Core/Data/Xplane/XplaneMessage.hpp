@@ -15,6 +15,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Data.hpp"
 #include "Message.hpp"
 
@@ -35,6 +36,7 @@ public:
     static XplaneMessage recover(int system);
     static XplaneMessage placeAtAirport(char airport[4], StartType startType, int location, int backwards);
     static XplaneMessage loadAircraft(int plane, char planePath[150], char weapons[24][50]);
+    static XplaneMessage selectData(std::vector<int> indices);
     XplaneMessage();
     ~XplaneMessage();
 };

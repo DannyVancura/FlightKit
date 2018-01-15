@@ -12,7 +12,7 @@ import FlightKit
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    private let connection = FKTConnection(receivingOn: 49123)
+    private let connection = FKTConnection(ip: "127.0.0.1", receivingOn: 49123, sendingTo: 49000)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         connection.start()

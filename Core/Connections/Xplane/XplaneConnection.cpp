@@ -18,6 +18,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <string>
+#include <vector>
 
 Connection::Xplane::XplaneConnection::XplaneConnection(int receivePort, int sendPort):
 receivePort(receivePort),
@@ -68,7 +69,24 @@ int Connection::Xplane::XplaneConnection::establishConnection() {
     }
 
     if (activeConnectionAttempt) {
-        Data::Xplane::XplaneMessage message = Data::Xplane::XplaneMessage::fail(0);
+        int selection[] = {
+            VALUES_SPEEDS,
+            VALUES_LAT_LON_ALT,
+            VALUES_MAG_COMPASS,
+            VALUES_PROP_SETTING,
+            VALUES_PIT_ROLL_HEAD,
+            VALUES_CONTROL_INPUTS,
+            VALUES_MIXTURE_SETTING,
+            VALUES_SYSTEM_PRESSURES,
+            VALUES_ATMOSPHERE_WEATHER,
+            VALUES_THROTTLE_COMMANDED,
+            VALUES_ATMOSPHERE_AIRCRAFT,
+            VALUES_TRIM_FLAP_STATS_SPEEDBRAKES,
+            VALUES_LOC_VELOCITY_DISTANCE_TRAVELED,
+            VALUES_MACH_SPEEDS_VERTICAL_VELOCITY_GLOADS
+        };
+        std::vector<int> values (selection, selection + sizeof(selection) / sizeof(int));
+        Data::Xplane::XplaneMessage message = Data::Xplane::XplaneMessage::selectData(values);
         ssize_t bytesSent = sendMessage(message);
 
         if (bytesSent < 0) {

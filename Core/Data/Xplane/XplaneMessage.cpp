@@ -120,6 +120,18 @@ XplaneMessage XplaneMessage::loadAircraft(int plane, char planePath[150], char w
     return message;
 }
 
+XplaneMessage XplaneMessage::selectData(std::vector<int> indices) {
+    XplaneMessage message = XplaneMessage();
+    message.length = 5 + indices.size() * sizeof(int);
+    message.data = (char *) malloc(message.length);
+    memcpy(message.data, "DSEL", 4);
+    for (int i = 0; i < indices.size(); i++) {
+        memcpy(message.data + 5 + i * sizeof(int), &indices.at(i), sizeof(int));
+    }
+
+    return message;
+}
+
 XplaneMessage::~XplaneMessage() {
     free(data);
 }
