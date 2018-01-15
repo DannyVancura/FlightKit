@@ -176,6 +176,8 @@
 
 /* Begin PBXFileReference section */
 		B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInsertAircraftStatement.h; sourceTree = "<group>"; };
+		B51BDDE5200D455600064154 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B51BDDE6200D4AFE00064154 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		B579C9FE200C27B300493754 /* AirplaneControls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AirplaneControls.cpp; sourceTree = "<group>"; };
 		B579C9FF200C27B300493754 /* AirplaneControls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AirplaneControls.hpp; sourceTree = "<group>"; };
 		B579CA09200C876800493754 /* DataRecording.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataRecording.cpp; sourceTree = "<group>"; };
@@ -321,6 +323,8 @@
 		B5C89E7E1FF433EB002A2A37 = {
 			isa = PBXGroup;
 			children = (
+				B51BDDE5200D455600064154 /* README.md */,
+				B51BDDE6200D4AFE00064154 /* LICENSE.md */,
 				B5C89EF91FF43717002A2A37 /* ObjC Wrapper */,
 				B5C89EE71FF434AD002A2A37 /* Core */,
 				B5C89E8A1FF433EB002A2A37 /* FlightKit */,
