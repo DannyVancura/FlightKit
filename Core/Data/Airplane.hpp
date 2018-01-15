@@ -13,6 +13,7 @@
 #include <array>
 #include <vector>
 #include "Engine.hpp"
+#include "AirplaneControls.hpp"
 
 class Data::Airplane {
 public:
@@ -42,6 +43,9 @@ public:
 
     // MARK: - Engines
     std::vector<Engine> engines;
+
+    // MARK: - Control input
+    AirplaneControls controls;
 };
 
 #endif /* Airplane_hpp */

@@ -8,7 +8,9 @@
 
 #include "XplaneBuffer.hpp"
 
-std::vector<float> Data::Xplane::XplaneBuffer::invalidOrValue(int index) {
+using namespace Data;
+
+std::vector<float> Xplane::XplaneBuffer::invalidOrValue(int index) {
     if (dataMap.find(index) != dataMap.end()) {
         return dataMap.at(index);
     } else {
@@ -16,7 +18,7 @@ std::vector<float> Data::Xplane::XplaneBuffer::invalidOrValue(int index) {
     }
 }
 
-Data::Xplane::XplaneBuffer::XplaneBuffer(unsigned char *data, long length) {
+Xplane::XplaneBuffer::XplaneBuffer(unsigned char *data, long length) {
     if (length >= 5) {
         prefix = (char *) malloc(5);
         memcpy(prefix, data, 5);
@@ -47,15 +49,29 @@ Data::Xplane::XplaneBuffer::XplaneBuffer(unsigned char *data, long length) {
     airplane.verticalVelocity = invalidOrValue(VALUES_MACH_SPEEDS_VERTICAL_VELOCITY_GLOADS)[2];
     airplane.pitch = invalidOrValue(VALUES_PIT_ROLL_HEAD)[0];
     airplane.roll = invalidOrValue(VALUES_PIT_ROLL_HEAD)[1];
+
+    AirplaneControls controlInput = AirplaneControls();
+    controlInput.commandedPitch = invalidOrValue(VALUES_CONTROL_INPUTS)[0];
+    controlInput.commandedRoll = invalidOrValue(VALUES_CONTROL_INPUTS)[1];
+    controlInput.commandedYaw = invalidOrValue(VALUES_CONTROL_INPUTS)[2];
+    controlInput.commandedPitchTrim = invalidOrValue(VALUES_TRIM_FLAP_STATS_SPEEDBRAKES)[0];
+    controlInput.commandedRollTrim = invalidOrValue(VALUES_TRIM_FLAP_STATS_SPEEDBRAKES)[1];
+    controlInput.commandedYawTrim = invalidOrValue(VALUES_TRIM_FLAP_STATS_SPEEDBRAKES)[2];
+    controlInput.commandedFlaps = invalidOrValue(VALUES_TRIM_FLAP_STATS_SPEEDBRAKES)[3];
+    controlInput.commandedThrottle = invalidOrValue(VALUES_THROTTLE_COMMANDED)[0];
+    controlInput.commandedMixture = invalidOrValue(VALUES_MIXTURE_SETTING)[0];
+    controlInput.commandedProp = invalidOrValue(VALUES_PROP_SETTING)[0];
+
+    airplane.controls = controlInput;
 }
 
-Data::Xplane::XplaneBuffer::~XplaneBuffer() {
+Xplane::XplaneBuffer::~XplaneBuffer() {
     free(prefix);
     dataMap.clear();
     otherAircraft.clear();
 }
 
-void Data::Xplane::XplaneBuffer::debug() {
+void Xplane::XplaneBuffer::debug() {
     printf("Prefix: %s\n", prefix);
     printf("Airplane heading: %f\n", airplane.headingTrue);
     printf("Airplane altitude: %f\n", airplane.altitudeTrueMSL);
