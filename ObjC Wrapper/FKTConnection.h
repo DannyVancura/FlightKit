@@ -10,6 +10,8 @@
 
 @interface FKTConnection : NSObject
 
+@property (readwrite) BOOL isRecording;
+
 /**
  Receives messages on the given port. It's not possible with this initializer to send messages before receiving the first message.
  Messages are sent to 49000 which is the default port of Xplane to receive messages on.

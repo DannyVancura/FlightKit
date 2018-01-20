@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char FlightKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <FlightKit/PublicHeader.h>
 
 #import <FlightKit/FKTConnection.h>
+#import <FlightKit/FKTNeuralNetwork.h>

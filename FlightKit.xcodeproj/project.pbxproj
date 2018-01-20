@@ -11,6 +11,15 @@
 		B51BDDE2200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
 		B51BDDE3200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
 		B51BDDE4200C9CD500064154 /* SQLInsertAircraftStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */; };
+		B51BDDEB200DB60A00064154 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51BDDE8200DB60A00064154 /* NeuralNetwork.cpp */; };
+		B51BDDEF200DB60A00064154 /* NeuralNetwork.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B51BDDE9200DB60A00064154 /* NeuralNetwork.hpp */; };
+		B51BF5972011C74900064154 /* OpenCLContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51BF5942011C74900064154 /* OpenCLContext.cpp */; };
+		B51BF59B2011C74900064154 /* OpenCLContext.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B51BF5952011C74900064154 /* OpenCLContext.hpp */; };
+		B51BF5AB2011C79200064154 /* FKTNeuralNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = B51BF5A82011C79200064154 /* FKTNeuralNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B51BF5AF2011C79200064154 /* FKTNeuralNetwork.mm in Sources */ = {isa = PBXBuildFile; fileRef = B51BF5A92011C79200064154 /* FKTNeuralNetwork.mm */; };
+		B51BF5B32011C86F00064154 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51BF5B22011C86F00064154 /* OpenCL.framework */; };
+		B51BF5B52011CA2B00064154 /* ML.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B51BF5B42011CA2B00064154 /* ML.hpp */; };
+		B51BF5C62011EAE600064154 /* FlightKit__macOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C89EB41FF4341E002A2A37 /* FlightKit__macOS_Tests.swift */; };
 		B579CA00200C27B300493754 /* AirplaneControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579C9FE200C27B300493754 /* AirplaneControls.cpp */; };
 		B579CA01200C27B300493754 /* AirplaneControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579C9FE200C27B300493754 /* AirplaneControls.cpp */; };
 		B579CA02200C27B300493754 /* AirplaneControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B579C9FE200C27B300493754 /* AirplaneControls.cpp */; };
@@ -127,6 +136,8 @@
 		B5D5E3771FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
 		B5D5E3781FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
 		B5D5E3791FF789B3003B8F2C /* Message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5D5E3751FF789B3003B8F2C /* Message.hpp */; };
+		B5F47DA92013280C00F806EE /* OpenCLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F47DA72013280C00F806EE /* OpenCLProgram.cpp */; };
+		B5F47DAA2013280C00F806EE /* OpenCLProgram.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5F47DA82013280C00F806EE /* OpenCLProgram.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +189,22 @@
 		B51BDDE0200C9CD500064154 /* SQLInsertAircraftStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLInsertAircraftStatement.h; sourceTree = "<group>"; };
 		B51BDDE5200D455600064154 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B51BDDE6200D4AFE00064154 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		B51BDDE8200DB60A00064154 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNetwork.cpp; sourceTree = "<group>"; };
+		B51BDDE9200DB60A00064154 /* NeuralNetwork.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NeuralNetwork.hpp; sourceTree = "<group>"; };
+		B51BF5842011C2AF00064154 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B51BF5862011C2B600064154 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		B51BF5882011C2BD00064154 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		B51BF58A2011C2C900064154 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		B51BF58C2011C3CD00064154 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B51BF58E2011C3D300064154 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B51BF5902011C3DD00064154 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B51BF5922011C3E200064154 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B51BF5942011C74900064154 /* OpenCLContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCLContext.cpp; sourceTree = "<group>"; };
+		B51BF5952011C74900064154 /* OpenCLContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenCLContext.hpp; sourceTree = "<group>"; };
+		B51BF5A82011C79200064154 /* FKTNeuralNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTNeuralNetwork.h; sourceTree = "<group>"; };
+		B51BF5A92011C79200064154 /* FKTNeuralNetwork.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FKTNeuralNetwork.mm; sourceTree = "<group>"; };
+		B51BF5B22011C86F00064154 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenCL.framework; sourceTree = DEVELOPER_DIR; };
+		B51BF5B42011CA2B00064154 /* ML.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ML.hpp; sourceTree = "<group>"; };
 		B579C9FE200C27B300493754 /* AirplaneControls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AirplaneControls.cpp; sourceTree = "<group>"; };
 		B579C9FF200C27B300493754 /* AirplaneControls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AirplaneControls.hpp; sourceTree = "<group>"; };
 		B579CA09200C876800493754 /* DataRecording.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataRecording.cpp; sourceTree = "<group>"; };
@@ -231,6 +258,8 @@
 		B5D5E36B1FF785F7003B8F2C /* XplaneMessage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XplaneMessage.cpp; sourceTree = "<group>"; };
 		B5D5E36C1FF785F7003B8F2C /* XplaneMessage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XplaneMessage.hpp; sourceTree = "<group>"; };
 		B5D5E3751FF789B3003B8F2C /* Message.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Message.hpp; sourceTree = "<group>"; };
+		B5F47DA72013280C00F806EE /* OpenCLProgram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCLProgram.cpp; sourceTree = "<group>"; };
+		B5F47DA82013280C00F806EE /* OpenCLProgram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenCLProgram.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +283,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51BF5B32011C86F00064154 /* OpenCL.framework in Frameworks */,
 				B579CA16200C87C700493754 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +331,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51BDDE7200DB5EF00064154 /* Machine Learning */ = {
+			isa = PBXGroup;
+			children = (
+				B51BF5B42011CA2B00064154 /* ML.hpp */,
+				B51BDDE8200DB60A00064154 /* NeuralNetwork.cpp */,
+				B51BDDE9200DB60A00064154 /* NeuralNetwork.hpp */,
+				B51BF5942011C74900064154 /* OpenCLContext.cpp */,
+				B51BF5952011C74900064154 /* OpenCLContext.hpp */,
+				B5F47DA72013280C00F806EE /* OpenCLProgram.cpp */,
+				B5F47DA82013280C00F806EE /* OpenCLProgram.hpp */,
+			);
+			path = "Machine Learning";
+			sourceTree = "<group>";
+		};
 		B579CA08200C872F00493754 /* Recording */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +369,7 @@
 			children = (
 				B51BDDE5200D455600064154 /* README.md */,
 				B51BDDE6200D4AFE00064154 /* LICENSE.md */,
+				B51BDDE7200DB5EF00064154 /* Machine Learning */,
 				B5C89EF91FF43717002A2A37 /* ObjC Wrapper */,
 				B5C89EE71FF434AD002A2A37 /* Core */,
 				B5C89E8A1FF433EB002A2A37 /* FlightKit */,
@@ -449,6 +494,8 @@
 			children = (
 				B5C89EFF1FF4375A002A2A37 /* FKTConnection.h */,
 				B5C89F001FF4375A002A2A37 /* FKTConnection.mm */,
+				B51BF5A82011C79200064154 /* FKTNeuralNetwork.h */,
+				B51BF5A92011C79200064154 /* FKTNeuralNetwork.mm */,
 			);
 			path = "ObjC Wrapper";
 			sourceTree = "<group>";
@@ -494,6 +541,15 @@
 		B5D5E34E1FF74B60003B8F2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B51BF5B22011C86F00064154 /* OpenCL.framework */,
+				B51BF58C2011C3CD00064154 /* Accelerate.framework */,
+				B51BF58E2011C3D300064154 /* Accelerate.framework */,
+				B51BF5902011C3DD00064154 /* Accelerate.framework */,
+				B51BF5922011C3E200064154 /* Accelerate.framework */,
+				B51BF5842011C2AF00064154 /* libz.tbd */,
+				B51BF5862011C2B600064154 /* libz.tbd */,
+				B51BF5882011C2BD00064154 /* libz.tbd */,
+				B51BF58A2011C2C900064154 /* libz.tbd */,
 				B579CA19200C87D200493754 /* libsqlite3.tbd */,
 				B579CA17200C87CD00493754 /* libsqlite3.tbd */,
 				B579CA15200C87C600493754 /* libsqlite3.tbd */,
@@ -546,12 +602,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51BF5B52011CA2B00064154 /* ML.hpp in Headers */,
 				B5D5E3721FF785F7003B8F2C /* XplaneMessage.hpp in Headers */,
 				B5C89EF61FF43633002A2A37 /* FlightSimConnectionListener.hpp in Headers */,
+				B51BF5AB2011C79200064154 /* FKTNeuralNetwork.h in Headers */,
+				B5F47DAA2013280C00F806EE /* OpenCLProgram.hpp in Headers */,
 				B5C89F5F1FF4E6F3002A2A37 /* XplaneListener.hpp in Headers */,
 				B5C89F3C1FF4930F002A2A37 /* FlightKit.h in Headers */,
 				B5C89F461FF497CD002A2A37 /* XplaneBuffer.hpp in Headers */,
 				B5C89F021FF4375A002A2A37 /* FKTConnection.h in Headers */,
+				B51BDDEF200DB60A00064154 /* NeuralNetwork.hpp in Headers */,
+				B51BF59B2011C74900064154 /* OpenCLContext.hpp in Headers */,
 				B5C89F251FF45A79002A2A37 /* Data.hpp in Headers */,
 				B5D5E3771FF789B3003B8F2C /* Message.hpp in Headers */,
 				B5C89F161FF44153002A2A37 /* Airplane.hpp in Headers */,
@@ -926,8 +987,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C89F061FF4375A002A2A37 /* FKTConnection.mm in Sources */,
+				B51BF5972011C74900064154 /* OpenCLContext.cpp in Sources */,
 				B5C89F5B1FF4E6F3002A2A37 /* XplaneListener.cpp in Sources */,
+				B51BF5AF2011C79200064154 /* FKTNeuralNetwork.mm in Sources */,
 				B5C89F1C1FF44340002A2A37 /* Engine.cpp in Sources */,
+				B5F47DA92013280C00F806EE /* OpenCLProgram.cpp in Sources */,
+				B51BDDEB200DB60A00064154 /* NeuralNetwork.cpp in Sources */,
 				B5D5E36E1FF785F7003B8F2C /* XplaneMessage.cpp in Sources */,
 				B5C89F421FF497CD002A2A37 /* XplaneBuffer.cpp in Sources */,
 				B579CA01200C27B300493754 /* AirplaneControls.cpp in Sources */,
@@ -941,6 +1006,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51BF5C62011EAE600064154 /* FlightKit__macOS_Tests.swift in Sources */,
 				B5C89F3B1FF4914A002A2A37 /* FlightKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1162,6 +1228,7 @@
 				INFOPLIST_FILE = FlightKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1187,6 +1254,7 @@
 				INFOPLIST_FILE = FlightKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1239,7 +1307,8 @@
 				INFOPLIST_FILE = "FlightKit (macOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1264,7 +1333,8 @@
 				INFOPLIST_FILE = "FlightKit (macOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1320,6 +1390,7 @@
 				INFOPLIST_FILE = "FlightKit (tvOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1344,6 +1415,7 @@
 				INFOPLIST_FILE = "FlightKit (tvOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1400,6 +1472,7 @@
 				INFOPLIST_FILE = "FlightKit (watchOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1425,6 +1498,7 @@
 				INFOPLIST_FILE = "FlightKit (watchOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vancura.FlightKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

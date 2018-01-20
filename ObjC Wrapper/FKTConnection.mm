@@ -59,13 +59,19 @@
         docURL = [docURL URLByAppendingPathComponent:@"sql_data"];
         recording = new DataRecording((char *) [docURL.path UTF8String]);
         xplaneListener.connectionCallback = ^void (Connection::FlightSimConnection *instance) {
-            recording->didEstablishConnection(instance);
+            if (self.isRecording) {
+                recording->didEstablishConnection(instance);
+            }
         };
         xplaneListener.airplaneDataCallback = ^void (Data::Airplane airplane) {
-            recording->didReceiveAirplaneData(airplane);
+            if (self.isRecording) {
+                recording->didReceiveAirplaneData(airplane);
+            }
         };
         xplaneListener.otherAircraftDataCallback = ^void (std::vector<Data::Airplane> otherAircraft) {
-            recording->didReceiveOtherAircraft(otherAircraft);
+            if (self.isRecording) {
+                recording->didReceiveOtherAircraft(otherAircraft);
+            }
         };
         xplaneConnection->listener = &xplaneListener;
     }
